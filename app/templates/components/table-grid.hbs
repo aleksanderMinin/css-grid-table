@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="header">index</div>
+  <div class="wrapper header" ></div>
+  {{#each props as |prop|}}
+    <div class="header">{{prop}}</div>
+    <div class="wrapper header" ></div>
+  {{/each}}
+  {{#each model as |example index|}}
+    <div class="">{{index}}</div>
+    <div class="wrapper" ></div>
+    {{#each props as |prop propIndex|}}
+      <div>{{get example prop}}</div>
+      <div class="wrapper" ></div>
+    {{/each}}
+  {{/each}}
+</div>
+{{yield}}

@@ -1,0 +1,42 @@
+.container {
+  width: 80%;
+  border: 2px dotted black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr 6px);
+  grid-gap: 0px 0px;
+
+  & > div.wrapper {
+    height: 100%;
+    width: 2px;
+    background-color: black;
+    border-left: 2px solid gold;
+    border-right: 2px solid gold;
+    cursor: e-resize;
+    padding: 0;
+
+    &:nth-child(8n) {
+      visibility: hidden;
+    }
+
+    &.header {
+      border-bottom: 2px solid black;
+    }
+  }
+
+  & > div {
+    font-size: 22px;
+    padding: .5em;
+    background: gold;
+    text-align: center;
+
+    &.header {
+      border-bottom: 2px solid black;
+    }
+  }
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}

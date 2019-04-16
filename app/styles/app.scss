@@ -9,7 +9,7 @@
   & > div.wrapper {
     height: 100%;
     width: 2px;
-    background-color: black;
+    opacity: 0;
     border-left: 2px solid gold;
     border-right: 2px solid gold;
     cursor: e-resize;
@@ -29,6 +29,9 @@
     padding: .5em;
     background: gold;
     text-align: center;
+    margin-left: -8px;
+    margin-top: -4px;
+    border: 2px solid black;
 
     &.header {
       border-bottom: 2px solid black;
